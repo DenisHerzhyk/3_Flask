@@ -1,0 +1,13 @@
+{%extends "base.html"%}
+
+{% block title %}
+    <title>Index</title>
+{% endblock %}
+
+{% block body %}
+  <form method = "POST" action = "/count">
+    <label>Input string into the write place:</label>
+    <input type = "text" name = "text">
+    <a href="/count"><button type="submit">Count it</button></a>
+  </form>
+{% endblock %}
